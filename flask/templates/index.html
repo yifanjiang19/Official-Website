@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Flasky{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
+</div>
+{#<form action="/t" method="post">#}
+    <p>姓名:</p>
+    <input type="text" name="name" id="name">
+    <<p>性别:</p>
+    <input type="text" name="gender" id="gender">
+    <br><p>电话:</p>
+    <input type="text" name="phone" id="phone">
+    <br><p>备用电话:</p>
+    <input type="text" name="phone_2" id="phone_2">
+    <br><p>宿舍:</p>
+    <input type="text" name="dorm" id="dorm">
+    <br>
+    <p>报名组别:</p>
+    <input type="text" name="group" id="group">
+    <br><p>自我介绍:</p>
+    <input type="text" name="intro" id="intro">
+    <br><p>院系专业年级:</p>
+    <input type="text" name="info" id="info">
+    <br>
+    <input type="submit" value="提交" id="send">
+{#</form>#}
+   <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+/*    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        if(xhr.readyState === 4) {
+            var obj = JSON.parse(xhr.responseText);
+            if(obj.status) {
+                alert("success");
+            } else
+                alert(obj.message);
+            }
+        }
+    };
+    xhr.open("get", "/test");
+    xhr.send(null);
+*/
+    $(function(){
+        $("#send").click(function () {
+            $.post("/t",{
+               name :   $("#name").val() ,
+               gender:  $("#gender").val(),
+               phone:   $("#phone").val(),
+               phone_2: $("#phone_2").val(),
+               dorm:    $("#dorm").val(),
+               group:   $("#group").val(),
+               intro:   $("#intro").val(),
+               info:    $("#info").val()
+            },function (data) {
+                alert(data.status);
+                    });
+        })
+    })
+</script>
+{% endblock %}
+
