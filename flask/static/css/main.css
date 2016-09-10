@@ -658,13 +658,13 @@ html, body {
   background-image: url(data:image/png;base64,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);
   background-repeat: no-repeat;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-position: 0 0;
   background-size: 100% 200%;
   position: absolute;
   left: 50%;
-  margin-left: -24px;
+  margin-left: -20px;
   bottom: 13%;
   cursor: pointer;
   animation: pre_body_arrow_amt 1s infinite;
@@ -673,7 +673,7 @@ html, body {
 }
 
 .pre_body_arrow:hover {
-  background-position: 0 -50px;
+  background-position: 0 -40px;
 }
 
 /* .pre_body_arrow-arrow {
@@ -825,7 +825,7 @@ html, body {
   text-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 5%;
-  left: 5%;
+  left: 1%;
   cursor: pointer;
 }
 .works-details .triangle:hover,
@@ -838,431 +838,6 @@ html, body {
   position: absolute;
   top: 20%;
   left: 20%;
-}
-
-/* -------------------------------- 
-
-Primary style
-
--------------------------------- */
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-/*
-fieldset
- */
-#contact form {
-  width: 70%;
-  height: 100%;
-  margin: 0 auto;
-}
-
-#contact .slide form fieldset {
-  width: 40%;
-  height: 80%;
-  float: left;
-  margin: 12% 4% 0 4%;
-}
-
-/* -------------------------------- 
-
-Form
-
--------------------------------- */
-#contact .cd-form::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-#contact .cd-form fieldset div {
-  /* form element wrapper */
-  position: relative;
-  margin: 25px 0;
-}
-
-#contact .cd-form fieldset div.radioh4 {
-  margin: -25px 0 0 0;
-}
-
-#contact .cd-form h4, #contact .cd-form .cd-label {
-  font-size: 12px;
-  color: #94aab0;
-  margin-bottom: 10px;
-}
-
-#contact .cd-form .cd-label {
-  display: block;
-}
-
-#contact .cd-form input, #contact .cd-form textarea, #contact .cd-form select, #contact .cd-form label, #contact .cd-form .radioh4 label
-#contact .cd-form .radioh4 h4 {
-  font-size: 15px;
-  color: #94aab0;
-}
-
-#contact .cd-form input[type="text"],
-#contact .cd-form input[type="email"],
-#contact .cd-form textarea,
-#contact .cd-form select,
-#contact .cd-form legend {
-  display: block;
-  width: 80%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-}
-
-#contact .cd-form input[type="text"],
-#contact .cd-form input[type="email"],
-#contact .cd-form textarea,
-#contact .cd-form select {
-  /* general style for input elements */
-  padding: 12px;
-  border: 1px solid #cfd9db;
-  border-radius: .25em;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
-}
-
-#contact .cd-form input[type="text"]:focus,
-#contact .cd-form input[type="email"]:focus,
-#contact .cd-form textarea:focus,
-#contact .cd-form select:focus {
-  outline: none;
-  border-color: #2c97de;
-  box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
-}
-
-#contact .cd-form .cd-select {
-  /* select element wapper */
-  position: relative;
-}
-
-#contact .cd-form .cd-select::after {
-  /* arrow icon for select element */
-  content: '';
-  position: absolute;
-  z-index: 1;
-  right: 23%;
-  top: 60%;
-  margin-top: -8px;
-  display: block;
-  width: 10px;
-  height: 10px;
-  background: url("../src/pic/contactpage/cd-icon-arrow.svg") no-repeat center center;
-  pointer-events: none;
-}
-
-#contact .cd-form select {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  cursor: pointer;
-}
-
-#contact .cd-form select::-ms-expand {
-  display: none;
-}
-
-#contact .cd-form .radioh4 h4,
-#contact .cd-form .radioh4 .cd-form-list {
-  margin-top: -10px;
-  display: inline-block;
-}
-
-#contact .cd-form .cd-form-list li {
-  /* wrapper for radio and checkbox input types */
-  display: inline-block;
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-#contact .cd-form input[type=radio],
-#contact .cd-form input[type=checkbox] {
-  /* hide original check and radio buttons */
-  position: absolute;
-  left: 0;
-  top: 75%;
-  transform: translateY(-50%);
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  z-index: 2;
-}
-
-#contact .cd-form input[type="radio"] + label,
-#contact .cd-form input[type="checkbox"] + label {
-  padding-left: 20px;
-}
-
-#contact .cd-form input[type="radio"] + label::before,
-#contact .cd-form input[type="radio"] + label::after,
-#contact .cd-form input[type="checkbox"] + label::before,
-#contact .cd-form input[type="checkbox"] + label::after {
-  /* custom radio and check boxes */
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 75%;
-  margin-top: -8px;
-  width: 10px;
-  height: 10px;
-}
-
-#contact .cd-form input[type="radio"] + label::before,
-#contact .cd-form input[type="checkbox"] + label::before {
-  border: 1px solid #cfd9db;
-  background: #ffffff;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
-}
-
-#contact .cd-form input[type="radio"] + label::before,
-#contact .cd-form input[type="radio"] + label::after {
-  border-radius: 50%;
-}
-
-#contact .cd-form input[type="checkbox"] + label::before,
-#contact .cd-form input[type="checkbox"] + label::after {
-  border-radius: .25em;
-}
-
-#contact .cd-form input[type="radio"] + label::after,
-#contact .cd-form input[type="checkbox"] + label::after {
-  background-color: #2c97de;
-  background-position: center center;
-  background-repeat: no-repeat;
-  box-shadow: 0 0 5px rgba(44, 151, 222, 0.4);
-  display: none;
-}
-
-#contact .cd-form input[type="radio"] + label::after {
-  /* custom image for radio button */
-  background-image: url("../src/pic/contactpage/cd-icon-radio.svg");
-}
-
-#contact .cd-form input[type="checkbox"] + label::after {
-  /* custom image for checkbox */
-  background-image: url("../src/pic/contactpage/cd-icon-check.svg");
-}
-
-#contact .cd-form input[type="radio"]:checked + label::after,
-#contact .cd-form input[type="checkbox"]:checked + label::after {
-  display: block;
-}
-
-#contact .cd-form input[type="radio"]:checked + label::before,
-#contact .cd-form input[type="radio"]:checked + label::after,
-#contact .cd-form input[type="checkbox"]:checked + label::before,
-#contact .cd-form input[type="checkbox"]:checked + label::after {
-  animation: cd-bounce 0.3s;
-}
-
-#contact .cd-form textarea {
-  min-height: 200px;
-  resize: vertical;
-  overflow: auto;
-  padding-right: 20%;
-}
-
-#contact .cd-form input[type="submit"] {
-  /* button style */
-  border: none;
-  background: #2c97de;
-  border-radius: .25em;
-  padding: 10px 20px;
-  color: #ffffff;
-  font-weight: bold;
-  float: right;
-  cursor: pointer;
-  margin-right: 20%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-}
-
-.no-touch #contact .cd-form input[type="submit"]:hover {
-  background: #42a2e1;
-}
-
-#contact .cd-form input[type="submit"]:focus {
-  outline: none;
-  background: #2b3e51;
-}
-
-#contact .cd-form input[type="submit"]:active {
-  transform: scale(0.9);
-}
-
-#contact .cd-form [required] {
-  background: url("../src/pic/contactpage/cd-required.svg") no-repeat top right;
-}
-
-#contact .cd-form .error-message {
-  width: 80%;
-}
-
-#contact .cd-form .error-message p {
-  background-color: #e94b35;
-  color: #ffffff;
-  font-size: 25px;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  border-radius: .25em;
-  padding: 10px;
-}
-
-#contact .cd-form .error {
-  border-color: #e94b35 !important;
-}
-
-@media only screen and (min-width: 600px) {
-  #contact .cd-form div {
-    /* form element wrapper */
-    margin: 25px 0;
-  }
-
-  #contact .cd-form legend + div {
-    /* reduce margin-top for first form element after the legend */
-    margin-top: 20px;
-  }
-
-  #contact .cd-form h4, #contact .cd-form .cd-label {
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-
-  #contact .cd-form input[type="text"],
-  #contact .cd-form input[type="email"],
-  #contact .cd-form textarea,
-  #contact .cd-form select {
-    padding: 5px;
-  }
-}
-@keyframes cd-bounce {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.8);
-  }
-}
-/* -------------------------------- 
-
-Custom icons
-
--------------------------------- */
-#contact .cd-form .icon input, #contact .cd-form .icon select, #contact .cd-form .icon textarea {
-  padding-left: 54px !important;
-}
-
-#contact .cd-form .user {
-  background: url("../src/pic/contactpage/cd-icon-user.svg") no-repeat 10px center;
-}
-
-#contact .cd-form [required].user {
-  background: url("../src/pic/contactpage/cd-icon-user.svg") no-repeat 10px center, url("../src/pic/contactpage/cd-required.svg") no-repeat top right;
-}
-
-#contact .cd-form .company {
-  background: url("../src/pic/contactpage/cd-icon-company.svg") no-repeat 10px center;
-}
-
-#contact .cd-form [required].company {
-  background: url("../src/pic/contactpage/cd-icon-company.svg") no-repeat 10px center, url("../src/pic/contactpage/cd-required.svg") no-repeat top right;
-}
-
-#contact .cd-form .email {
-  background: url("../src/pic/contactpage/cd-icon-email.svg") no-repeat 10px center;
-}
-
-#contact .cd-form [required].email {
-  background: url("../src/pic/contactpage/cd-icon-email.svg") no-repeat 10px center, url("../src/pic/contactpage/cd-required.svg") no-repeat top right;
-}
-
-#contact .cd-form .budget {
-  background: url("../src/pic/contactpage/cd-icon-budget.svg") no-repeat 10px center;
-}
-
-#contact .cd-form .message {
-  background: url("../src/pic/contactpage/cd-icon-message.svg") no-repeat 10px 10px;
-}
-
-#contact .cd-form [required].message {
-  background: url("../src/pic/contactpage/cd-icon-message.svg") no-repeat 10px 10px, url("../src/pic/contactpage/cd-required.svg") no-repeat top right;
-}
-
-/* -------------------------------- 
-
-FLoating labels 
-
--------------------------------- */
-.floating-labels div {
-  margin: 14px 0;
-}
-
-.floating-labels div.radioh4 {
-  margin: 0;
-}
-
-.floating-labels .cd-label {
-  position: absolute;
-  top: 2px;
-  left: 10px;
-  font-size: 15px;
-  cursor: text;
-  transition: top 0.2s, left 0.2s, font-size 0.2s;
-}
-
-.floating-labels .icon .cd-label {
-  left: 56px;
-}
-
-.floating-labels .cd-label.float {
-  /* move label out the input field */
-  font-size: 12px;
-  top: -20px;
-  left: 0 !important;
-}
-
-@media only screen and (min-width: 600px) {
-  .floating-labels legend + div {
-    /* reduce margin-top for first form element after the legend */
-    margin-top: 10px;
-  }
-
-  .floating-labels .cd-label {
-    top: 6px;
-  }
-}
-.iw_poi_title {
-  color: #CC5522;
-  font-size: 14px;
-  font-weight: bold;
-  overflow: hidden;
-  padding-right: 13px;
-  white-space: nowrap;
-}
-
-.iw_poi_content {
-  font: 12px arial,sans-serif;
-  overflow: visible;
-  padding-top: 4px;
-  white-space: -moz-pre-wrap;
-  word-wrap: break-word;
 }
 
 #contact .contactus {
@@ -1296,6 +871,210 @@ FLoating labels
 #contact #kaptcha {
   height: 30px;
   width: 120px;
+}
+
+#join {
+  overflow: hidden;
+  color: #94aab0;
+}
+
+#joinAside {
+  z-index: 5;
+  height: 80px;
+  left: 40px;
+}
+
+#labelBox {
+  float: left;
+  margin-right: 30px;
+  margin-left: 15%;
+}
+
+#recruit_form {
+  height: 420px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#recruit_form textarea {
+  width: 335px;
+  height: 200px;
+  margin-bottom: 10px;
+  resize: none;
+  border: #C0BABA solid 1px;
+  border-radius: 3px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+#address img {
+  height: 93%;
+  margin-right: 20px;
+}
+
+#submit {
+  display: block;
+  width: 170px;
+  height: 43px;
+  color: white;
+  background-color: #6AC0EF;
+  border: 0;
+  border-radius: 3px;
+  font-size: 18px;
+  color: white;
+  margin-left: 85px;
+}
+
+#inputBox {
+  float: left;
+  display: inline-block;
+  width: 300px;
+}
+#inputBox input + .radio {
+  top: 2px;
+  position: relative;
+  background-image: url("../src/pic/contactpage/radio.jpg");
+  background-size: 100% 100%;
+}
+#inputBox input:checked + .radio {
+  background-image: url("../src/pic/contactpage/radioChecked.jpg");
+}
+#inputBox input {
+  background-color: transparent;
+  color: #94aab0;
+  font-size: 18px;
+}
+#inputBox input#name {
+  top: 0;
+}
+
+#selfIntro {
+  font-size: 18px;
+  display: inline-block;
+  width: 335px;
+  margin-right: 7%;
+  margin-left: 30px;
+}
+#selfIntro label {
+  margin-bottom: 25px;
+}
+#selfIntro textarea {
+  background-color: transparent;
+  color: #94aab0;
+}
+#selfIntro #kaptcha_input {
+  background-color: transparent;
+  margin: 15px;
+  height: 30px;
+  font-size: 14px;
+  border: solid #C0BABA 1px;
+  border-radius: 3px;
+}
+
+#labelBox > label {
+  font-size: 18px;
+  text-align: right;
+  display: block;
+  margin-bottom: 35px;
+  height: 18px;
+  white-space: nowrap;
+}
+
+#inputBox {
+  font-size: 18px;
+}
+
+#inputBox > input {
+  display: block;
+  height: 31px;
+  margin-bottom: 19px;
+  top: -7px;
+  position: relative;
+  width: 200px;
+  border: solid #C0BABA 1px;
+  border-radius: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#inputBox > input::-webkit-input-placeholder,
+#selfIntro > textarea::-webkit-input-placeholder {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+#inputBox > input::-moz-input-placeholder,
+#selfIntro > textarea::-moz-input-placeholder {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+#inputBox > input:-moz-input-placeholder,
+#selfIntro > textarea:-moz-input-placeholder {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+#inputBox > input::-ms-input-placeholder,
+#selfIntro > textarea::-ms-input-placeholder {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+#inputBox > input::input-placeholder,
+#selfIntro > textarea::input-placeholder {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+#inputBox > input:focus::-webkit-input-placeholder,
+#selfIntro > textarea:focus::-webkit-input-placeholder {
+  color: white;
+}
+
+#inputBox > input:focus::-moz-input-placeholder,
+#selfIntro > textarea:focus::-moz-input-placeholder {
+  color: white;
+}
+
+#inputBox > input:focus:-moz-input-placeholder,
+#selfIntro > textarea:focus:-moz-input-placeholder {
+  color: white;
+}
+
+#inputBox > input:focus::-ms-input-placeholder,
+#selfIntro > textarea:focus::-ms-input-placeholder {
+  color: white;
+}
+
+#inputBox > input:focus::input-placeholder,
+#selfIntro > textarea:focus::input-placeholder {
+  color: white;
+}
+
+#inputBox > div {
+  margin-bottom: 31px;
+  position: relative;
+  top: -3px;
+}
+
+#groupRadio > label {
+  float: left;
+  width: 95px;
+  height: 25px;
+  white-space: nowrap;
+}
+
+label > .radio {
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+}
+
+#name {
+  margin-bottom: 11px;
+  top: -7px;
 }
 
 #footer {

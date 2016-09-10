@@ -171,26 +171,24 @@ function introStuff() {
 //init progress bar
 var loader = new resLoader({
     resources: [
-        'css/main.min.css',
-        'css/jquery.fullPage.css',
-        'src/pic/BG.png',
-        'src/pic/homepage/android-Assistor.png',
-        'src/pic/homepage/come-Assistor.png',
-        'src/pic/homepage/Design-Assistor.png',
-        'src/pic/homepage/iOS-Assistor.png',
-        'src/pic/homepage/game-Assistor.png',
-        'src/pic/homepage/Lab-Assistor.png',
-        'src/pic/homepage/nomove.png',
-        'src/pic/homepage/PM-Assistor.png',
-        'src/pic/homepage/Web-Assistor.png',
-        'src/pic/homepage/home-heading.png',
-        'src/pic/homepage/uniquelogo.png',
+        'static/css/main.min.css',
+        'static/src/pic/BG.png',
+        'static/src/pic/homepage/android-Assistor.png',
+        'static/src/pic/homepage/come-Assistor.png',
+        'static/src/pic/homepage/Design-Assistor.png',
+        'static/src/pic/homepage/iOS-Assistor.png',
+        'static/src/pic/homepage/game-Assistor.png',
+        'static/src/pic/homepage/Lab-Assistor.png',
+        'static/src/pic/homepage/nomove.png',
+        'static/src/pic/homepage/PM-Assistor.png',
+        'static/src/pic/homepage/Web-Assistor.png',
+        'static/src/pic/homepage/uniquelogo.png',
     ],
     onStart: function(total) {
-        console.log('start:' + total);
+        // console.log('start:' + total);
     },
     onProgress: function(current, total) {
-        console.log(current + '/' + total);
+        // console.log(current + '/' + total);
         var percent = current / total * 100;
         var lp = 50 - percent / 2.0,
             rp = 50 + percent / 2.0;
@@ -304,7 +302,20 @@ var loader = new resLoader({
                         $.fn.fullpage.moveTo('groups_page', 6);
                     });
                 },
-                // afterResize: function() {},
+                afterResize: function() {
+                    console.log("here");
+                    drawCircle();
+                    $("#navbar_btn").mouseover(function() {
+                        navbar_draw();
+                    });
+                    $("#main_body").move_bg();
+                    // var $event_canvas = $("#event-can"),
+                    $screenW = $(window).width();
+                    $screenH = $(window).height();
+                    $("#events #event-years #yearLabels .yearLabel").remove();
+                    drawYears();
+                    drawHomeDash();
+                },
                 // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
                 // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
                 onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
@@ -314,10 +325,10 @@ var loader = new resLoader({
                         // var $img = $(this).find('img');
 
                         // console.log("leaveside:"+slideIndex);
-                        var $img = $("#events #event-details .imgContent >img:eq("+slideIndex+")");
+                        var $img = $("#events #event-details .imgContent >img:eq(" + slideIndex + ")");
                         $img.css({
                             "transform": 'scale3d(0.7,0.7,0.7)',
-                            "opacity":"0",
+                            "opacity": "0",
                         });
                         // var timer = setTimeout(function() {
                         //     /* body... */
@@ -332,10 +343,10 @@ var loader = new resLoader({
                     if (index == 4) {
                         // var leavingSlide = $(this);
                         // console.log("loadslide:"+slideIndex);
-                        var $img = $("#events #event-details .imgContent >img:eq("+slideIndex+")");
+                        var $img = $("#events #event-details .imgContent >img:eq(" + slideIndex + ")");
                         // console.log(slideIndex+1);
                         $img.css({
-                            "opacity":"1",
+                            "opacity": "1",
                             "transform": 'scale3d(1,1,1)',
 
                         });
