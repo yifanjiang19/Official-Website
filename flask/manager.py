@@ -31,7 +31,6 @@ api =Api(app)
 #api
 class INFO(Resource):
     def post(self):
-        print(request.form)
         json_1 = json.loads(request.data)
         text_1 = json_1['text']
         if session.get('text') == text_1.upper():
@@ -52,7 +51,6 @@ class INFO(Resource):
 class INFO_PC(Resource):
     def post(self):
         if session.get('text') == request.form.get('text').upper():
-            print(request.form)
             asd = Information(name=request.form.get("name"),
                           gender=request.form.get("gender"),
                           dorm=request.form.get("dorm"),
@@ -104,14 +102,11 @@ def internal_server_error(e):
 #Route
 @app.route('/', methods=['GET', 'POST'])
 def mobile():
-    print(request.headers['User-Agent'])
     j = request.headers['User-Agent']
     if j.find('Mobile') == -1:
-        print('a')
         return redirect('/pc')
     else:
-        print('b')
-    return render_template('app.html')
+        return render_template('app.html')
 
 @app.route('/pc', methods=['GET', 'POST'])
 def pc():
@@ -122,7 +117,6 @@ def pc():
 def pil():
     text,img_data = cap_test2.create()
     session['text']=text.upper()
-    print(session['text'])
     response = make_response(img_data)
     response.headers['Content-Type'] = 'image/jpeg'
     return response
