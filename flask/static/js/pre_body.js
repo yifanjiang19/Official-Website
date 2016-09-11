@@ -385,6 +385,10 @@ var loader = new resLoader({
                 $("#pre_body").remove();
             }, 250);
             // $(".page").height($(window).height());
+            $("img.lazy").each(function(index, el) {
+                // console.log(this);
+                $(this).attr('src', $(this).data('original'));
+            });
 
         });
     }
