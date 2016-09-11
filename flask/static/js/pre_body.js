@@ -182,10 +182,12 @@ var loader = new resLoader({
         'static/css/main.min.css',
         'static/js/jquery-3.1.0.min.js',
         'static/js/main.min.js',
+        'static/src/pic/BG.png',
         'static/src/pic/homepage/Design-Assistor.png',
         'static/src/pic/homepage/PM-Assistor.png',
         'static/src/pic/homepage/android-Assistor.png',
         'static/src/pic/homepage/iOS-Assistor.png',
+        'static/src/pic/homepage/nomove.png',
     ],
     onStart: function(total) {
         // console.log('start:' + total);
@@ -306,7 +308,7 @@ var loader = new resLoader({
                     });
                 },
                 afterResize: function() {
-                    console.log("here");
+                    // console.log("here");
                     drawCircle();
                     $("#navbar_btn").mouseover(function() {
                         navbar_draw();
