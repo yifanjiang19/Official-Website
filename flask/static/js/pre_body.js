@@ -329,12 +329,6 @@ var loader = new resLoader({
                     //     // console.log
                     //     $imgs.addClass('loadImage');
                     // };
-                    // if (index == 3) {
-                    //     $("img.lazy").each(function(index, el) {
-                    //         // console.log(this);
-                    //         $(this).attr('src', $(this).data('original'));
-                    //     });
-                    // }
                     if (index == 4) {
                         // var leavingSlide = $(this);
                         // console.log(this);
@@ -367,19 +361,8 @@ var loader = new resLoader({
                             "transform": 'scale3d(1,1,1)',
 
                         });
-                        $("img.lazy").each(function(index, el) {
-                            // console.log(this);
-                            $(this).attr('src', $(this).data('original'));
-                        });
 
                     };
-                    if (index == 5) {
-                        $("img.lazy").each(function(index, el) {
-                            // console.log(this);
-                            $(this).attr('src', $(this).data('original'));
-                        });
-                    }
-
                 },
             });
 
@@ -404,7 +387,10 @@ var loader = new resLoader({
                 $("#pre_body").remove();
             }, 250);
             // $(".page").height($(window).height());
-
+            $("img.lazy").each(function(index, el) {
+                // console.log(this);
+                $(this).attr('src', $(this).data('original'));
+            });
 
         });
     }
