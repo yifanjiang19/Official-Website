@@ -391,6 +391,10 @@ var loader = new resLoader({
                 // console.log(this);
                 $(this).attr('src', $(this).data('original'));
             });
+            $("img.lazy2").each(function(index, el) {
+                // console.log(this);
+                $(this).attr('src', $(this).data('original'));
+            });
 
         });
     }
