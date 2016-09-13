@@ -340,7 +340,7 @@ $("#contact form").on("submit", function(event) {
 	}
 
 	var _data = $(this).serialize();
-	// console.log(_data);
+	console.log(_data);
 
 
 	$.post('/info_pc', _data, function(data) {

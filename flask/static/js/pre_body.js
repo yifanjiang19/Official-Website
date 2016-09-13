@@ -213,7 +213,7 @@ var loader = new resLoader({
                 resize: true,
                 //Navigation
                 menu: '#navbar_menu',
-                anchors: ['home_page', 'intro_page', 'groups_page', 'events_page', 'works_page', 'contact_page'],
+                anchors: ['home_page', 'intro_page', 'groups_page', 'events_page', 'works_page', 'contact_page', 'footer_page'],
                 // navigation: false,
                 // navigationPosition: 'right',
                 // navigationTooltips: ['firstSlide', 'secondSlide'],
