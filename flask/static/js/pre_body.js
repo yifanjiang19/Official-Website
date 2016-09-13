@@ -188,6 +188,11 @@ var loader = new resLoader({
         'static/src/pic/homepage/android-Assistor.png',
         'static/src/pic/homepage/iOS-Assistor.png',
         'static/src/pic/homepage/nomove.png',
+        'static/src/pic/homepage/Web-Assistor.png',
+        'static/src/pic/homepage/Lab-Assistor.png',
+        'static/src/pic/homepage/game-Assistor.png',
+        'static/src/pic/homepage/come-Assistor.png',
+        'static/src/pic/homepage/uniquelogo.png',
     ],
     onStart: function(total) {
         // console.log('start:' + total);
@@ -213,7 +218,7 @@ var loader = new resLoader({
                 resize: true,
                 //Navigation
                 menu: '#navbar_menu',
-                anchors: ['home_page', 'intro_page', 'groups_page', 'events_page', 'works_page', 'contact_page'],
+                anchors: ['home_page', 'intro_page', 'groups_page', 'events_page', 'works_page', 'contact_page', 'footer_page'],
                 // navigation: false,
                 // navigationPosition: 'right',
                 // navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -226,7 +231,7 @@ var loader = new resLoader({
                 scrollingSpeed: 700,
                 autoScrolling: true,
                 fitToSection: true,
-                fitToSectionDelay: 1000,
+                fitToSectionDelay: 500,
                 scrollBar: false,
                 easing: 'easeInOutCubic',
                 easingcss3: 'ease',
@@ -243,7 +248,7 @@ var loader = new resLoader({
 
                 //Accessibility
                 keyboardScrolling: true,
-                animateAnchor: true,
+                animateAnchor: false,
                 recordHistory: false,
 
                 //Design
@@ -376,7 +381,7 @@ var loader = new resLoader({
         $(".pre_body_arrow").animate({
             "opacity": 1,
         }, 200).click(function() { /* Act on the event */
-            $.fn.fullpage.silentMoveTo('home_page');
+            // $.fn.fullpage.silentMoveTo('home_page');
             $("#pre_body").css({
                 "transform": "scale3d(0.1,0.1,0.1)",
                 // "transform": "",
@@ -387,11 +392,14 @@ var loader = new resLoader({
                 $("#pre_body").remove();
             }, 250);
             // $(".page").height($(window).height());
-            $("img.lazy").each(function(index, el) {
-                // console.log(this);
-                $(this).attr('src', $(this).data('original'));
-            });
-
+        });
+        $("img.lazy").each(function(index, el) {
+            // console.log(this);
+            $(this).attr('src', $(this).data('original'));
+        });
+        $("img.lazy2").each(function(index, el) {
+            // console.log(this);
+            $(this).attr('src', $(this).data('original'));
         });
     }
 });

@@ -327,14 +327,25 @@ $("#contact form").on("submit", function(event) {
 	// var me = this;
 	// console.log(me);
 	event.preventDefault();
+	var $select = $("#contact form #contact_select");
+	var $text = $("#contact form #cd-textarea");
+	if ($select.val() == 7) {
+		alert("请选择组别");
+		return false;
+	}
+	// console.log($text.val().length);
+	if ($text.val().length >= 1000) {
+		alert("自我介绍在1000字以内");
+		return false;
+	}
 
 	var _data = $(this).serialize();
-	// console.log(_data);
+	console.log(_data);
 
 
 	$.post('/info_pc', _data, function(data) {
 		if (data.status == true) {
-			alert('报名成功')
+			alert('报名成功');
 		} else {
 			alert('验证码错误');
 		};
@@ -342,6 +353,7 @@ $("#contact form").on("submit", function(event) {
 		verify.setAttribute('src', '/pil?' + Math.random());
 	}).fail(function() {
 		alert("服务器错误,报名失败");
+		return false;
 	});
 });
 var verify = document.getElementById('kaptcha');
