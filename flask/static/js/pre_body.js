@@ -226,7 +226,7 @@ var loader = new resLoader({
                 scrollingSpeed: 700,
                 autoScrolling: true,
                 fitToSection: true,
-                fitToSectionDelay: 1000,
+                fitToSectionDelay: 500,
                 scrollBar: false,
                 easing: 'easeInOutCubic',
                 easingcss3: 'ease',
@@ -243,7 +243,7 @@ var loader = new resLoader({
 
                 //Accessibility
                 keyboardScrolling: true,
-                animateAnchor: true,
+                animateAnchor: false,
                 recordHistory: false,
 
                 //Design
@@ -376,7 +376,7 @@ var loader = new resLoader({
         $(".pre_body_arrow").animate({
             "opacity": 1,
         }, 200).click(function() { /* Act on the event */
-            $.fn.fullpage.silentMoveTo('home_page');
+            // $.fn.fullpage.silentMoveTo('home_page');
             $("#pre_body").css({
                 "transform": "scale3d(0.1,0.1,0.1)",
                 // "transform": "",
