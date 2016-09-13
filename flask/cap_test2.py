@@ -29,7 +29,7 @@ def create():
     height = 60
     image = Image.new('RGB', (width, height), (255, 255, 255))
     # 创建Font对象:
-    font = ImageFont.truetype('Arial.ttf', 36)
+    font = ImageFont.truetype('aaa.ttf', 36)
     # 创建Draw对象:
     draw = ImageDraw.Draw(image)
     text = gene_text()

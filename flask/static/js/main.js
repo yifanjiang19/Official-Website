@@ -169,7 +169,7 @@ var $works = $("#works .works-details");
 
 //var $worksCtn = $(".worksCtn");
 var $controlarrows = $("#works .controlarrows");
-console.log(typeof(slideNum));
+// console.log(typeof(slideNum));
 
 $("#works .work_view").on('click', function(event) {
 	event.preventDefault();
@@ -234,7 +234,7 @@ $work_left.click(function() {
 });
 $work_right.click(function() {
 	$worksCtn.animate({
-		left: "-3.1rem",
+		left: "-6.2rem",
 	}, 500, function() {
 		// Animation complete.
 		$work_left.show();
@@ -242,7 +242,7 @@ $work_right.click(function() {
 	});
 }).mouseenter(function() {
 	$worksCtn.animate({
-		left: "-3.1rem",
+		left: "-6.2rem",
 	}, 500, function() {
 		// Animation complete.
 		$work_left.show();
@@ -272,7 +272,7 @@ $work_right.click(function() {
 // 	})
 
 // }
-$workback.click(function() {
+$workback.click(function(event) {
 	event.preventDefault();
 
 	var $worksNav = $("#works .fp-slidesNav");
@@ -329,7 +329,7 @@ $("#contact form").on("submit", function(event) {
 	event.preventDefault();
 
 	var _data = $(this).serialize();
-	console.log(_data);
+	// console.log(_data);
 
 
 	$.post('/info_pc', _data, function(data) {
@@ -690,10 +690,11 @@ function drawYears() {
 
 }
 drawYears();
-
+// console.log("firefox");
 var $eventsback = $('#events #event-details .triangle');
 
-$eventsback.click(function() {
+$eventsback.click(function(event) {
+	// console.log("firefox");
 	event.preventDefault();
 	var $events = $("#events #events-details");
 	var $event_years = $("#events #event-years");

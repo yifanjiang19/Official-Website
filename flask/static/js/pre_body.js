@@ -169,20 +169,25 @@ function introStuff() {
 // 'js/main.js',
 // 'js/navbar.js',
 //init progress bar
+//        // 'static/src/pic/homepage/android-Assistor.png',
+// 'static/src/pic/homepage/come-Assistor.png',
+// 'static/src/pic/homepage/Design-Assistor.png',
+// 'static/src/pic/homepage/iOS-Assistor.png',
+// 'static/src/pic/homepage/game-Assistor.png',
+// 'static/src/pic/homepage/Lab-Assistor.png',
+// 'static/src/pic/homepage/PM-Assistor.png',
+// 'static/src/pic/homepage/Web-Assistor.png',
 var loader = new resLoader({
     resources: [
         'static/css/main.min.css',
+        'static/js/jquery-3.1.0.min.js',
+        'static/js/main.min.js',
         'static/src/pic/BG.png',
-        'static/src/pic/homepage/android-Assistor.png',
-        'static/src/pic/homepage/come-Assistor.png',
         'static/src/pic/homepage/Design-Assistor.png',
-        'static/src/pic/homepage/iOS-Assistor.png',
-        'static/src/pic/homepage/game-Assistor.png',
-        'static/src/pic/homepage/Lab-Assistor.png',
-        'static/src/pic/homepage/nomove.png',
         'static/src/pic/homepage/PM-Assistor.png',
-        'static/src/pic/homepage/Web-Assistor.png',
-        'static/src/pic/homepage/uniquelogo.png',
+        'static/src/pic/homepage/android-Assistor.png',
+        'static/src/pic/homepage/iOS-Assistor.png',
+        'static/src/pic/homepage/nomove.png',
     ],
     onStart: function(total) {
         // console.log('start:' + total);
@@ -303,7 +308,7 @@ var loader = new resLoader({
                     });
                 },
                 afterResize: function() {
-                    console.log("here");
+                    // console.log("here");
                     drawCircle();
                     $("#navbar_btn").mouseover(function() {
                         navbar_draw();
@@ -319,6 +324,11 @@ var loader = new resLoader({
                 // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
                 // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
                 onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
+                    // if (index == 3) {
+                    //     var $imgs = $("#events #event-details .imgContent img");
+                    //     // console.log
+                    //     $imgs.addClass('loadImage');
+                    // };
                     if (index == 4) {
                         // var leavingSlide = $(this);
                         // console.log(this);
@@ -338,6 +348,7 @@ var loader = new resLoader({
                         // }, 200);
 
                     };
+
                 },
                 afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
                     if (index == 4) {
@@ -376,6 +387,10 @@ var loader = new resLoader({
                 $("#pre_body").remove();
             }, 250);
             // $(".page").height($(window).height());
+            $("img.lazy").each(function(index, el) {
+                // console.log(this);
+                $(this).attr('src', $(this).data('original'));
+            });
 
         });
     }
