@@ -188,6 +188,11 @@ var loader = new resLoader({
         'static/src/pic/homepage/android-Assistor.png',
         'static/src/pic/homepage/iOS-Assistor.png',
         'static/src/pic/homepage/nomove.png',
+        'static/src/pic/homepage/Web-Assistor.png',
+        'static/src/pic/homepage/Lab-Assistor.png',
+        'static/src/pic/homepage/game-Assistor.png',
+        'static/src/pic/homepage/come-Assistor.png',
+        'static/src/pic/homepage/uniquelogo.png',
     ],
     onStart: function(total) {
         // console.log('start:' + total);
@@ -387,15 +392,14 @@ var loader = new resLoader({
                 $("#pre_body").remove();
             }, 250);
             // $(".page").height($(window).height());
-            $("img.lazy").each(function(index, el) {
-                // console.log(this);
-                $(this).attr('src', $(this).data('original'));
-            });
-            $("img.lazy2").each(function(index, el) {
-                // console.log(this);
-                $(this).attr('src', $(this).data('original'));
-            });
-
+        });
+        $("img.lazy").each(function(index, el) {
+            // console.log(this);
+            $(this).attr('src', $(this).data('original'));
+        });
+        $("img.lazy2").each(function(index, el) {
+            // console.log(this);
+            $(this).attr('src', $(this).data('original'));
         });
     }
 });
